@@ -1,120 +1,80 @@
-# <span style="color:#3498db; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 2.5em;">eCommerce Platform</span> 
+# 🛒 eCommerce Platform - ASP.NET Core MVC  
 
-📌 <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 1.2em;">**Project Overview**</span>
+## 📌 Purpose  
+This project is a **web-based eCommerce platform** built using **ASP.NET Core MVC** with **Entity Framework (EF) Core** for database management.  
+The system offers **robust user role management**, including:  
 
-This project is a web-based eCommerce platform built using ASP.NET Core MVC with Entity Framework (EF) Core for database management. It provides a robust role-based authorization system, allowing admins, producers, and consumers to interact with the system based on their roles.
+- **👨‍💼 Admin:** Manages users, orders, and platform settings.  
+- **🏭 Producers:** Manage product catalogs (add, update, delete products).  
+- **🛍️ Consumers:** Place orders, manage profiles, and view products.  
 
-✨ <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 1.5em;">**Features**</span>
+The platform supports **product management, user profile handling, and order workflows** with **CRUD operations** across all roles.  
 
-🔐 <span style="color:#2ecc71; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 1.3em;">**Role-based Authorization**</span>
-*   <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">**Producers:** Manage product catalogs (add, update, delete products).</span>
-*   <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">**Consumers:** Place orders, manage profiles, and view products.</span>
+---
 
-🗄️ <span style="color:#2ecc71; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 1.3em;">**Entity Framework Core**</span>
-*   <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">ORM functionalities with migrations for smooth schema updates.</span>
+## 🚀 Features  
 
-🌍 <span style="color:#2ecc71; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 1.3em;">**State Management & Sessions**</span>
-*   <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">User authentication and authorization using sessions.</span>
+### ✅ **Role-based Authorization**  
+- **Producers**: Manage product catalogs (add, update, delete products).  
+- **Consumers**: Place orders, manage profiles, and view products.  
 
-🛒 <span style="color:#2ecc71; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 1.3em;">**CRUD Operations**</span>
-*   <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Full Create, Read, Update, Delete functionality for products & profiles.</span>
+### ✅ **Entity Framework Core**  
+- Database operations are managed through **EF Core**, providing **ORM functionalities**.  
+- Uses **Migrations** to ensure smooth schema updates.  
 
-📦 <span style="color:#2ecc71; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 1.3em;">**Order Management Workflow**</span>
-*   <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Pending → Confirmed → Dispatched → Finished</span>
-*   <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Consumers can also cancel an order.</span>
+### ✅ **State Management & Sessions**  
+- User authentication and authorization managed using **sessions**.  
+- Different session states for **logged-in and guest users**.  
 
-📧 <span style="color:#2ecc71; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 1.3em;">**Email Notifications**</span>
-*   <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Order status updates via SendGrid.</span>
+### ✅ **CRUD Operations**  
+- Products and **user profiles** support full **Create, Read, Update, and Delete (CRUD)** operations.  
+- **Search & Filter** products by **name, date, and price**.  
 
-📱 <span style="color:#2ecc71; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 1.3em;">**Responsive UI**</span>
-*   <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Built using Bootstrap 5 for a seamless experience across devices.</span>
+### ✅ **Order Management System**  
+Orders progress through the following statuses:  
+- 🕒 **Pending**: Booked but payment pending.  
+- ✅ **Confirmed**: Payment received.  
+- 🚚 **Dispatched**: Order in transit.  
+- 🎉 **Finished**: Delivered and payment completed.  
+- ❌ **Canceled**: Consumers can cancel orders.  
 
-🛂 <span style="color:#2ecc71; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 1.3em;">**Authentication**</span>
-*   <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Managed using ASP.NET Core Identity.</span>
+### ✅ **🔔 Notifications**  
+- 📧 **Email notifications** for order status updates using **SendGrid**.  
 
-💳 <span style="color:#2ecc71; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 1.3em;">**Payment Integration**</span>
-*   <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Powered by Stripe.</span>
+### ✅ **💳 Payment Integration**  
+- Secure **Stripe** payment gateway.  
 
-🛠️ <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 1.5em;">**Technologies Used**</span>
+### ✅ **📱 Responsive Design**  
+- Built with **Bootstrap 5 & CSS** for a seamless UI experience.  
 
-*   <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">ASP.NET Core MVC</span>
-*   <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Entity Framework Core</span>
-*   <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Microsoft SQL Server</span>
-*   <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Bootstrap 5 / CSS</span>
-*   <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Session Management</span>
-*   <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">ASP.NET Core Identity</span>
-*   <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Stripe (Payment Gateway)</span>
-*   <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">SendGrid (Email Notifications)</span>
+### ✅ **🔒 Security & Authentication**  
+- **ASP.NET Core Identity** for secure authentication.  
+- **Composite keys** applied to `UserID` and `Email` to ensure **data integrity**.  
 
-🚀 <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 1.5em;">**Prerequisites**</span>
+---
 
-Before running the project, ensure the following tools are installed:
+## 🛠 Technologies Used  
 
-🏗️ <span style="color:#e74c3c; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 1.3em;">**.NET SDK**</span> <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">(matching your project version)</span>
-🗄️ <span style="color:#e74c3c; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 1.3em;">**SQL Server**</span> <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">(or any configured database)</span>
-🖥️ <span style="color:#e74c3c; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 1.3em;">**Visual Studio**</span> <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">(or any IDE with .NET Core support)</span>
-🛠️ <span style="color:#e74c3c; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 1.3em;">**Entity Framework Core CLI**</span> <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">(installed via .NET CLI):</span>
-    <code style="font-family: 'Courier New', Courier, monospace;">dotnet tool install --global dotnet-ef</code>
-📩 <span style="color:#e74c3c; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 1.3em;">**SendGrid Account**</span> <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">(for email notifications)</span>
+| Technology  | Description |
+|------------|------------|
+| **ASP.NET Core MVC** | Backend framework for handling requests |
+| **Entity Framework Core** | ORM for database interactions |
+| **Microsoft SQL Server** | Database management |
+| **Bootstrap 5 / CSS** | Frontend UI styling |
+| **Session Management** | User state handling |
+| **ASP.NET Core Identity** | Secure authentication |
+| **Stripe** | Payment processing |
+| **SendGrid** | Email notifications |
 
-⚙️ <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 1.5em;">**Setup & Installation**</span>
+---
 
-1️⃣ <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">**Clone the Repository**</span>
+## 🔧 Prerequisites  
 
-```bash
-git clone https://github.com/yourusername/ecommerce-platform.git
-cd ecommerce-platform
-2️⃣ <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Configure the Database</span>
+Before running the project, ensure you have the following installed:  
 
-Open appsettings.json and ensure the connection string is correctly set:
-
-json
-{
-  "ConnectionStrings": {
-    "DefaultConnection": "Server=(localdb)\\mssqllocaldb;Database=your_db;Trusted_Connection=True;MultipleActiveResultSets=true"
-  },
-  "Stripe": {
-    "SecretKey": "your_stripe_secret_key",
-    "PublishableKey": "your_stripe_publishable_key"
-  },
-  "SendGrid": {
-    "ApiKey": "your_sendgrid_api_key"
-  }
-}
-3️⃣ <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Apply Migrations</span>
-
-bash
-dotnet ef database update
-<span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">This command sets up the database schema.</span>
-
-4️⃣ <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Build the Project</span>
-
-bash
-dotnet build
-5️⃣ <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Run the Application</span>
-
-bash
-dotnet run
-6️⃣ <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Open in Browser</span>
-
-<span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">After running the application, visit the URL shown in the terminal (e.g., </span><code style="font-family: 'Courier New', Courier, monospace;">http://localhost:5000</code><span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">).</span>
-
-📜 <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 1.5em;">License</span>
-
-<span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">This project is MIT Licensed. Feel free to modify and use it as needed!</span>
-
-🤝 <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 1.5em;">Contributing</span>
-
-<span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Contributions are welcome! Follow these steps:</span>
-
-<span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Fork the repository.</span>
-<span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Create a new branch (</span><code style="font-family: 'Courier New', Courier, monospace;">feature-xyz</code><span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">).</span>
-<span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Commit your changes.</span>
-<span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Push the branch and create a Pull Request.</span>
-📬 <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 1.5em;">Contact</span>
-
-<span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">For any queries, reach out via:</span>
-
-📧 <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Email: your-email@example.com</span> 🐙 <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">GitHub: yourusername</span> 🌐 <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Website: yourwebsite.com</span>
-
-🌟 <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">If you like this project, please give it a ⭐ on GitHub!</span>
+- ✅ [.NET SDK](https://dotnet.microsoft.com/download) (matching your project version)  
+- ✅ [SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads) (or any configured database)  
+- ✅ [Visual Studio](https://visualstudio.microsoft.com/) (or any IDE with .NET Core support)  
+- ✅ **Entity Framework Core CLI:**  
+  ```sh
+  dotnet tool install --global dotnet-ef
