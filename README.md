@@ -96,6 +96,7 @@ Open `appsettings.json` and ensure the connection string and API keys are correc
     "ApiKey": "your_sendgrid_api_key"
   }
 }
+
 3️⃣ <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">**Apply Migrations**</span>
 
 ```bash
