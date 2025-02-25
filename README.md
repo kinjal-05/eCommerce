@@ -99,7 +99,7 @@ Open `appsettings.json` and ensure the connection string and API keys are correc
 
 3️⃣ <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">**Apply Migrations**</span>
 
-```bash
+```json
 dotnet ef database update
 
 4️⃣ <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Build the Project</span>
