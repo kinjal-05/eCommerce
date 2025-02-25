@@ -78,7 +78,12 @@ Before running the project, ensure you have the following installed:
 - ✅ **Entity Framework Core CLI:**  
   ```sh
   dotnet tool install --global dotnet-ef
-<span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Configure the Database</span>
+
+2️⃣ <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">**Configure the Database**</span>
+
+Open `appsettings.json` and ensure the connection string and API keys are correctly set:
+
+```json
 {
   "ConnectionStrings": {
     "DefaultConnection": "Server=(localdb)\\mssqllocaldb;Database=your_db;Trusted_Connection=True;MultipleActiveResultSets=true"
