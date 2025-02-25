@@ -96,11 +96,15 @@ Open `appsettings.json` and ensure the connection string and API keys are correc
   }
 }
 
+```sh
 3️⃣ <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">**Apply Migrations**</span>
+
 dotnet ef database update
 
+```sh
 4️⃣ <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">**Build the Project**</span>
 dotnet build
 
+```sh
 5️⃣ <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">**Run the Application**</span>
 dotnet run
