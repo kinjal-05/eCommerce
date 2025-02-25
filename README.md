@@ -78,9 +78,10 @@ Before running the project, ensure you have the following installed:
 - ✅ **Entity Framework Core CLI:**  
   ```sh
   dotnet tool install --global dotnet-ef
-Step 2: Configure the Database
-Open appsettings.json and ensure the connection string and API keys are correctly set:
 
+2️⃣ <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">**Configure the Database**</span>
+
+Open appsettings.json and ensure the connection string and API keys are correctly set:
 ```json
 {
   "ConnectionStrings": {
@@ -94,21 +95,19 @@ Open appsettings.json and ensure the connection string and API keys are correctl
     "ApiKey": "your_sendgrid_api_key"
   }
 }
+```
 
-
-Step 3: Apply Migrations
-
-bash
+3️⃣ <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">**Apply Migrations**</span>
+```sh
 dotnet ef database update
+```
 
-
-Step 4: Build the Project
-
-bash
+4️⃣ <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">**Build the Project**</span>
+```sh
 dotnet build
+```
 
-
-Step 5: Run the Application
-
-bash
-dotnet run
+5️⃣ <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">**Run the Application**</span>
+```sh
+dotnet run
+```
