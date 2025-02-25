@@ -78,3 +78,16 @@ Before running the project, ensure you have the following installed:
 - ✅ **Entity Framework Core CLI:**  
   ```sh
   dotnet tool install --global dotnet-ef
+<span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Configure the Database</span>
+{
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=(localdb)\\mssqllocaldb;Database=your_db;Trusted_Connection=True;MultipleActiveResultSets=true"
+  },
+  "Stripe": {
+    "SecretKey": "your_stripe_secret_key",
+    "PublishableKey": "your_stripe_publishable_key"
+  },
+  "SendGrid": {
+    "ApiKey": "your_sendgrid_api_key"
+  }
+}
