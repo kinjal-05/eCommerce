@@ -81,7 +81,7 @@ Before running the project, ensure you have the following installed:
 Step 2: Configure the Database
 Open appsettings.json and ensure the connection string and API keys are correctly set:
 
-
+```json
 {
   "ConnectionStrings": {
     "DefaultConnection": "Server=(localdb)\\mssqllocaldb;Database=your_db;Trusted_Connection=True;MultipleActiveResultSets=true"
