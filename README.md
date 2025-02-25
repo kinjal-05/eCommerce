@@ -96,3 +96,15 @@ Open `appsettings.json` and ensure the connection string and API keys are correc
     "ApiKey": "your_sendgrid_api_key"
   }
 }
+3️⃣ <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">**Apply Migrations**</span>
+
+```bash
+dotnet ef database update
+
+4️⃣ <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Build the Project</span>
+```bash
+dotnet build
+
+5️⃣ <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Run the Application</span>
+```bash
+dotnet run
