@@ -83,7 +83,6 @@ Before running the project, ensure you have the following installed:
 
 Open `appsettings.json` and ensure the connection string and API keys are correctly set:
 
-```json
 {
   "ConnectionStrings": {
     "DefaultConnection": "Server=(localdb)\\mssqllocaldb;Database=your_db;Trusted_Connection=True;MultipleActiveResultSets=true"
@@ -100,8 +99,8 @@ Open `appsettings.json` and ensure the connection string and API keys are correc
 3️⃣ <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">**Apply Migrations**</span>
 dotnet ef database update
 
-4️⃣ <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Build the Project</span>
+4️⃣ <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">**Build the Project**</span>
 dotnet build
 
-5️⃣ <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Run the Application</span>
+5️⃣ <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">**Run the Application**</span>
 dotnet run
