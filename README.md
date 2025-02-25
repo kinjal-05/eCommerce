@@ -6,55 +6,64 @@
     <title>eCommerce Platform - ASP.NET Core MVC</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+            font-family: 'Arial', sans-serif;
             background-color: #f4f4f4;
             color: #333;
-            margin: 20px;
             padding: 20px;
-        }
-        h1, h2, h3 {
-            color: #2c3e50;
-        }
-        .container {
             max-width: 900px;
             margin: auto;
+        }
+        h1, h2, h3 {
+            color: #0056b3;
+        }
+        .section {
             background: #fff;
             padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        code {
-            background: #eee;
-            padding: 2px 5px;
-            border-radius: 5px;
-        }
-        .highlight {
-            background: #e7f4ff;
-            padding: 10px;
-            border-left: 5px solid #3498db;
             margin: 10px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin: 5px 0;
+        }
+        .icon {
+            color: #28a745;
+            font-weight: bold;
+        }
+        .command {
+            background: #e3e3e3;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-family: monospace;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>🌟 eCommerce Platform - ASP.NET Core MVC</h1>
-        
+    <h1>🌟 eCommerce Platform - ASP.NET Core MVC</h1>
+    
+    <div class="section">
         <h2>📌 Purpose</h2>
         <p>This project is a web-based eCommerce platform built using ASP.NET Core MVC with Entity Framework (EF) Core for database management.</p>
-        
+    </div>
+    
+    <div class="section">
         <h2>🚀 Features</h2>
         <ul>
-            <li><strong>Role-based Authorization</strong>: Admin, Producers, Consumers</li>
-            <li><strong>Entity Framework Core</strong>: Efficient ORM, database migrations</li>
-            <li><strong>State Management & Sessions</strong>: Secure authentication using ASP.NET Core Identity</li>
-            <li><strong>CRUD Operations</strong>: Full product and profile management</li>
-            <li><strong>Order Management</strong>: Track order statuses (Pending, Confirmed, Dispatched, Finished, Canceled)</li>
-            <li><strong>Email Notifications</strong>: SendGrid integration for order updates</li>
-            <li><strong>Payment Processing</strong>: Stripe integration for secure transactions</li>
+            <li><span class="icon">✅</span> Role-based Authorization</li>
+            <li><span class="icon">✅</span> Entity Framework Core for database operations</li>
+            <li><span class="icon">✅</span> State Management & Sessions</li>
+            <li><span class="icon">✅</span> CRUD Operations</li>
+            <li><span class="icon">✅</span> Order Management System</li>
+            <li><span class="icon">✅</span> Email Notifications with SendGrid</li>
+            <li><span class="icon">✅</span> Secure Payment with Stripe</li>
         </ul>
-        
+    </div>
+    
+    <div class="section">
         <h2>🛠 Technologies Used</h2>
         <ul>
             <li>ASP.NET Core MVC</li>
@@ -62,49 +71,36 @@
             <li>Microsoft SQL Server</li>
             <li>Bootstrap 5 / CSS</li>
             <li>ASP.NET Core Identity</li>
-            <li>SendGrid for emails</li>
-            <li>Stripe for payments</li>
+            <li>SendGrid for Emails</li>
+            <li>Stripe for Payments</li>
         </ul>
-        
+    </div>
+    
+    <div class="section">
         <h2>🏗️ How to Run the Project</h2>
         <h3>🔧 Prerequisites</h3>
         <ul>
             <li>.NET SDK</li>
             <li>SQL Server</li>
-            <li>Visual Studio / VS Code</li>
-            <li>Entity Framework CLI: <code>dotnet tool install --global dotnet-ef</code></li>
-            <li>SendGrid & Stripe accounts</li>
+            <li>Visual Studio</li>
+            <li>Entity Framework Core CLI: <span class="command">dotnet tool install --global dotnet-ef</span></li>
+            <li>SendGrid & Stripe Accounts</li>
         </ul>
         
-        <h3>📌 Steps to Run the Project</h3>
-        <ol>
-            <li><strong>Navigate to Project Folder:</strong> <code>cd path/to/eCommerceAsp.NET_CORE</code></li>
-            <li><strong>Configure Database & API Keys</strong></li>
-        </ol>
-        <div class="highlight">
-            <pre><code>{
-  "ConnectionStrings": {
-    "DefaultConnection": "Server=YOUR_SERVER_NAME;Database=eCommerceDB;Trusted_Connection=True;"
-  },
-  "Stripe": {
-    "SecretKey": "your_stripe_secret_key",
-    "PublishableKey": "your_stripe_publishable_key"
-  },
-  "SendGrid": {
-    "ApiKey": "your_sendgrid_api_key"
-  }
-}</code></pre>
-        </div>
-        <ol start="3">
-            <li><strong>Apply Migrations:</strong> <code>dotnet ef database update</code></li>
-            <li><strong>Build the Project:</strong> <code>dotnet build</code></li>
-            <li><strong>Run the Application:</strong> <code>dotnet run</code></li>
-            <li><strong>Open in Browser:</strong> Check terminal output for <code>http://localhost:5000</code></li>
-        </ol>
-        
-        <h3>📩 Need Help?</h3>
-        <p>If you run into any issues, feel free to reach out or open an issue on GitHub!</p>
-        <h2>🛒 Happy Coding & Enjoy Building Your eCommerce Platform! 🚀</h2>
+        <h3>📌 Steps</h3>
+        <ul>
+            <li>1️⃣ Navigate to project folder: <span class="command">cd path/to/eCommerceAsp.NET_CORE</span></li>
+            <li>2️⃣ Configure <strong>appsettings.json</strong> with your database & API keys.</li>
+            <li>3️⃣ Apply migrations: <span class="command">dotnet ef database update</span></li>
+            <li>4️⃣ Build the project: <span class="command">dotnet build</span></li>
+            <li>5️⃣ Run the application: <span class="command">dotnet run</span></li>
+            <li>6️⃣ Open browser and navigate to: <span class="command">http://localhost:5000</span></li>
+        </ul>
+    </div>
+    
+    <div class="section">
+        <h2>📩 Need Help?</h2>
+        <p>If you encounter any issues, feel free to open an issue on GitHub!</p>
     </div>
 </body>
 </html>
