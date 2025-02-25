@@ -78,12 +78,10 @@ Before running the project, ensure you have the following installed:
 - ✅ **Entity Framework Core CLI:**  
   ```sh
   dotnet tool install --global dotnet-ef
+Step 2: Configure the Database
+Open appsettings.json and ensure the connection string and API keys are correctly set:
 
-2️⃣ <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">**Configure the Database**</span>
 
-<span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Open </span><code style="font-family: 'Courier New', Courier, monospace;">appsettings.json</code><span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"> and ensure the connection string and API keys are correctly set:</span>
-
-```json
 {
   "ConnectionStrings": {
     "DefaultConnection": "Server=(localdb)\\mssqllocaldb;Database=your_db;Trusted_Connection=True;MultipleActiveResultSets=true"
@@ -97,5 +95,20 @@ Before running the project, ensure you have the following installed:
   }
 }
 
-3️⃣ <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Apply Migrations</span>
+
+Step 3: Apply Migrations
+
+bash
 dotnet ef database update
+
+
+Step 4: Build the Project
+
+bash
+dotnet build
+
+
+Step 5: Run the Application
+
+bash
+dotnet run
